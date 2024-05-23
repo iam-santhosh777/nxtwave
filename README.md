@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# About the Project
+1. Login Page
+    => created the login Page with credentials
+        PhoneNumber: 1234567890
+        Password: password123
+    => used Formik for Validation
+    => used React Toastify for better Ui/Ux Experience for errors and success
+2. Resources Page
+    => created the Resources Page with the following components
+        1. Navbar
+        2. Search Bar
+        3. Item Card
+        4. Tabs
+        ...Etc  
+    => if we click on any one of each (resources, requests, users). it will display respected cards
+    => implemented Pagination, in Each page only 6 Item cards will display
+     
+    
+
+
+
+    

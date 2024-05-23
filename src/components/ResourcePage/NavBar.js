@@ -1,0 +1,35 @@
+import React from 'react';
+import nxtwave_logo from "../../assets/NxtWave TM_Coloured logo 1.png"; // Adjust the path as needed
+import profile_pic from "../../assets/profile_pic.png";
+import { Link } from 'react-router-dom';
+
+const NavBar = () => {
+
+    const handleAddClick = () => {
+        
+    }
+  return (
+    <nav className="bg-white shadow-md p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        {/* Logo Section */}
+        <div className="flex items-center">
+          <img src={nxtwave_logo} alt="Logo" className="w-10 md: w-[25%]" />
+        </div>
+
+        {/* Right Section: Add Button and Profile Image */}
+        <div className="flex items-center space-x-4">
+          <button onClick={handleAddClick} className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">
+            + Add
+          </button>
+          <img 
+            src={profile_pic} // Placeholder for user profile image
+            alt="User Profile"
+            className="h-10 w-10 rounded-full object-cover"
+          />
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export default NavBar;
