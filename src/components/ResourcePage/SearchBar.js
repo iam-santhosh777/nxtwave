@@ -1,14 +1,17 @@
 import React from 'react';
 
+
 const SearchBar = ({ searchTerm, setSearchTerm }) => {
   return (
-    <input
+      <div className='w-[75%] relative'>
+        <input
       type="text"
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)}
       placeholder="Search..."
-      className="p-2 border rounded mb-4"
+      className="w-3/4 p-2 my-4 border rounded mb-4"
     />
+      </div>
   );
 };
 

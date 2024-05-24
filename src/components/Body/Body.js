@@ -1,8 +1,9 @@
 import React from 'react';
-import LoginPage from '../loginPage/Login';
+import LoginPage from '../LoginPage/Login';
 import Resource from '../ResourcePage/Resource';
 import { createBrowserRouter } from 'react-router-dom';
 import { RouterProvider } from 'react-router-dom';
+import Add from '../AddResources/Add';
 
 const Body = () => {
 
@@ -16,6 +17,10 @@ const Body = () => {
             {
                 path: "/resource",
                 element: <Resource />
+            },
+            {
+                path: "/add",
+                element: <Add />
             }
         ]
     )

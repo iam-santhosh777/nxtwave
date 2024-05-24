@@ -3,7 +3,7 @@ import userReducer from "./userSlice";
 
 const appStore = configureStore({
     reducer: {
-        phoneNumber: userReducer,
+        phoneNumber: userReducer
     }
 })
 

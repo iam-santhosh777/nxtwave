@@ -24,6 +24,7 @@ const Tabs = () => {
   const handleTabClick = (tab) => {
     setActiveTab(tab);
     setCurrentPage(1); // Reset to the first page when the tab changes
+    setSearchTerm(''); // Clear the search term when the tab changes
   };
 
   // Filter data based on active tab
@@ -79,7 +80,7 @@ const Tabs = () => {
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
       {/* Tab Content */}
-      <div className="p-4">
+      <div className="p-4 w-[90%] flex justify-center gap-3 flex-wrap">
         {currentItems.map((item) => (
           <ItemCard key={item.id} item={item} />
         ))}
@@ -92,4 +93,3 @@ const Tabs = () => {
 };
 
 export default Tabs;
-

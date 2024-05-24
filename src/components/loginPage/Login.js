@@ -34,7 +34,7 @@ const LoginPage = () => {
 
   return (
     <div className="flex flex-col md:flex-row justify-center items-center min-h-screen bg-white">
-      <ToastContainer />
+      <ToastContainer position="top-center"/>
       <div className="w-[50%] md:w-[50%] py-8 flex justify-center items-center">
         <img
           src={nxtwave_logo}
@@ -43,7 +43,7 @@ const LoginPage = () => {
         />
       </div>
       <div className="w-[50%] md:w-[25%] p-8 shadow-lg rounded-lg">
-        <h1 className="text-2xl mb-4">Login / SignUp</h1>
+        <h1 className="text-2xl mb-4 text-center">Login / SignUp</h1>
         <Formik
           initialValues={{ phoneNumber: "", password: "" }}
           onSubmit={handleSubmit}

@@ -86,6 +86,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
         ...Etc  
     => if we click on any one of each (resources, requests, users). it will display respected cards
     => implemented Pagination, in Each page only 6 Item cards will display
+3. Created Add Resource Page
      
     
 
