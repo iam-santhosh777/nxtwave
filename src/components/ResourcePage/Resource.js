@@ -6,7 +6,6 @@ const Resource = () => {
     <div className='bg-gray-50 h-full'>
         <NavBar />
         <Tabs />
-        
     </div>
   )
 }

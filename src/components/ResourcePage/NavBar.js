@@ -2,6 +2,7 @@ import React from 'react';
 import nxtwave_logo from "../../assets/NxtWave TM_Coloured logo 1.png"; // Adjust the path as needed
 import profile_pic from "../../assets/profile_pic.png";
 import { useNavigate } from 'react-router-dom';
+import ProfileMenu from './ProfileMenu';
 
 const NavBar = () => {
     const navigate = useNavigate();
@@ -30,11 +31,12 @@ const NavBar = () => {
           {/* <button onClick={handleAddClick} className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">
             + Add
           </button> */}
-          <img 
+          {/* <img 
             src={profile_pic} // Placeholder for user profile image
             alt="User Profile"
             className="h-10 w-10 rounded-full object-cover"
-          />
+          /> */}
+          <ProfileMenu profileImage={profile_pic} />
         </div>
       </div>
     </nav>

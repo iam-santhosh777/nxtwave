@@ -1,15 +1,35 @@
-import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css";
-import Body from './components/Body/Body';
-import appStore from './utils/appStore';
-import { Provider } from 'react-redux';
-function App() {
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import LoginPage from './components/LoginPage/Login';
+import Resource from './components/ResourcePage/Resource';
+import ProtectedRoute from './components/ProtectedRoute';
+import Add from './components/AddResources/Add';
 
+const App = () => {
   return (
-    <Provider store={appStore}>
-    <Body/>
-    </Provider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route
+          path="/resource"
+          element={
+            <ProtectedRoute>
+              <Resource />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/add"
+          element={
+            <ProtectedRoute>
+              <Add />
+            </ProtectedRoute>
+          }
+        />
+        {/* <Route path="/" element={<Navigate to="/login" />} /> */}
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
