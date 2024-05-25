@@ -15,7 +15,7 @@ const NavBar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center">
-          <img src={nxtwave_logo} alt="Logo" className="w-10 md: w-[25%]" />
+          <img src={nxtwave_logo} alt="Logo" className="w-10 md:w-[25%]" />
         </div>
 
         {/* Right Section: Add Button and Profile Image */}
