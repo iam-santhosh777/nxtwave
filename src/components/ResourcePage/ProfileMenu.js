@@ -14,7 +14,7 @@ const ProfileMenu = ({ profileImage }) => {
   };
 
   const handleLogout = () => {
-    navigate('/');
+    navigate('nxtwave/');
     dispatch(clearUser());
   };
   if (!user.isLoggedIn) {

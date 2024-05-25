@@ -9,7 +9,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LoginPage />} />
+        <Route path="nxtwave/" element={<LoginPage />} />
         <Route
           path="/resource"
           element={
