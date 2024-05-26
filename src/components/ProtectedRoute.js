@@ -6,7 +6,7 @@ const ProtectedRoute = ({ children }) => {
   const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
 
   if (!isLoggedIn) {
-    return <Navigate to="nxtwave/" />;
+    return <Navigate to="/nxtwave/" />;
   } 
 
   return children;

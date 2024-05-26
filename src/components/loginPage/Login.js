@@ -42,7 +42,7 @@ const LoginPage = () => {
           className="w-[50%] h-auto"
         />
       </div>
-      <div className="w-[50%] md:w-[25%] p-8 shadow-lg rounded-lg">
+      <div className="w-[75%] md:w-[25%] p-8 shadow-lg rounded-lg">
         <h1 className="text-2xl mb-4 text-center">Login / SignUp</h1>
         <Formik
           initialValues={{ phoneNumber: "", password: "" }}

@@ -37,13 +37,13 @@ const Add = () => {
   return (
     <div className='bg-gray-50'>
       <NavBar />
-      <div className="container mx-auto mt-8">
+      <div className="container w-[90%] md:w-full mx-auto mt-8">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 md:pr-4">
             <button onClick={handleBack}>Back</button>
             <ResourceForm onSubmit={handleFormSubmit} />
           </div>
-          <div className="md:w-1/2">
+          <div className=" md:visible  md:w-1/2">
             <div className="flex justify-center items-center md:border md:border-gray-300 rounded-md overflow-hidden" style={{ minHeight: '300px' }}>
               <img src={sample_pic} alt="Sample" className="w-[25%] md:w-full" />
             </div>
