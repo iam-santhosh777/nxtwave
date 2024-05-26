@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/nxtwave/static/css/main.ae02417b.css",
-    "main.js": "/nxtwave/static/js/main.99087896.js",
+    "main.css": "/nxtwave/static/css/main.d90dba64.css",
+    "main.js": "/nxtwave/static/js/main.0ed95e1e.js",
     "static/js/453.e11133b4.chunk.js": "/nxtwave/static/js/453.e11133b4.chunk.js",
     "static/media/sample_pic.png": "/nxtwave/static/media/sample_pic.764e6d70222bcdac6f8c.png",
     "static/media/profile_pic.png": "/nxtwave/static/media/profile_pic.764bf8cae004712e4c3e.png",
     "static/media/NxtWave TM_Coloured logo 1.png": "/nxtwave/static/media/NxtWave TM_Coloured logo 1.755d2f6830431a14ae0e.png",
     "index.html": "/nxtwave/index.html",
-    "main.ae02417b.css.map": "/nxtwave/static/css/main.ae02417b.css.map",
-    "main.99087896.js.map": "/nxtwave/static/js/main.99087896.js.map",
+    "main.d90dba64.css.map": "/nxtwave/static/css/main.d90dba64.css.map",
+    "main.0ed95e1e.js.map": "/nxtwave/static/js/main.0ed95e1e.js.map",
     "453.e11133b4.chunk.js.map": "/nxtwave/static/js/453.e11133b4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae02417b.css",
-    "static/js/main.99087896.js"
+    "static/css/main.d90dba64.css",
+    "static/js/main.0ed95e1e.js"
   ]
 }
