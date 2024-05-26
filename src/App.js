@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './components/LoginPage/Login';
 import Resource from './components/ResourcePage/Resource';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -26,7 +26,6 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-        {/* <Route path="/" element={<Navigate to="/login" />} /> */}
       </Routes>
     </Router>
   );

@@ -1,8 +1,9 @@
 import React from 'react';
 
 const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
-  // Create an array of page numbers
+  // Creating an array of page numbers
   const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
+  console.log(pageNumbers);
 
   return (
     <div className="flex justify-center my-4">

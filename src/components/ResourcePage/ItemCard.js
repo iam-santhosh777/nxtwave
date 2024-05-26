@@ -10,18 +10,14 @@ const ItemCard = ({ item }) => {
         </div>
         <div>
           <h3 className="text-lg font-bold">{item.title}</h3>
-          <p className="text-sm text-gray-500">{item.category}</p>
-          
+          <p className="text-sm text-gray-500">{item.category}</p> 
         </div>
-
       </div>
       <div className='flex flex-col justify-center'>
           <a href={item.link} className="text-blue-500" target="_blank" rel="noopener noreferrer">
             {item.link}
           </a>
-          <p>{item.description}</p>
-          {/* <p className="text-sm text-gray-500">Tag: {item.tag}</p> */}
-          
+          <p>{item.description}</p>        
           </div>
       </div>
   );

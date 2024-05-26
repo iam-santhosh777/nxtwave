@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SubmitButton from './SubmitButton';
 
 const ResourceForm = ({ onSubmit }) => {
   const [itemTitle, setItemTitle] = useState('');
@@ -44,9 +45,7 @@ const ResourceForm = ({ onSubmit }) => {
         <input type="text" id="category" value={category} onChange={(e) => setCategory(e.target.value)} className="w-full border rounded-md px-1 py-2 mb-4" required />
         <label htmlFor="description" className="block mb-1">Description</label>
         <textarea id="description" value={description} onChange={(e) => setDescription(e.target.value)} className="w-full border rounded-md px-4 py-2 mb-4" required />
-        <div className='flex justify-center '>
-        <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Create</button>
-        </div>
+        <SubmitButton />
       </form>
       <ToastContainer position="bottom-center" />
     </div>

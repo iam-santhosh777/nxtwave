@@ -1,31 +1,22 @@
 import React from 'react';
 import NavBar from '../ResourcePage/NavBar';
-import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import sample_pic from '../../assets/sample_pic.png'; // Import the sample picture
+import sample_pic from '../../assets/sample_pic.png';
 import ResourceForm from './ResourceForm';
+import axios from 'axios';
+import BackButton from './BackButton';
 
 const Add = () => {
-  const navigate = useNavigate();
-
-  const handleBack = () => {
-    navigate('/resource');
-  };
-
   const handleFormSubmit = async (formData) => {
     try {
-      const response = await fetch('https://media-content.ccbp.in/website/react-assignment/add_resource.json', {
-        method: 'POST',
+      const response = await axios.post('https://media-content.ccbp.in/website/react-assignment/add_resource.json', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
       });
-
-      if (response.ok) {
+      if (response.status === 200) {
         toast.success('Resource added successfully!');
-      }
-      else {
+      } else {
         toast.error('Failed to add resource');
       }
     } catch (error) {
@@ -40,7 +31,7 @@ const Add = () => {
       <div className="container w-[90%] md:w-full mx-auto mt-8">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 md:pr-4">
-            <button onClick={handleBack}>Back</button>
+            <BackButton />
             <ResourceForm onSubmit={handleFormSubmit} />
           </div>
           <div className=" md:visible  md:w-1/2">

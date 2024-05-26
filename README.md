@@ -70,26 +70,67 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-# About the Project
-1. Login Page
-    => created the login Page with credentials
-        PhoneNumber: 1234567890
-        Password: password123
-    => used Formik for Validation
-    => used React Toastify for better Ui/Ux Experience for errors and success
-2. Resources Page
-    => created the Resources Page with the following components
-        1. Navbar
-        2. Search Bar
-        3. Item Card
-        4. Tabs
-        ...Etc  
-    => if we click on any one of each (resources, requests, users). it will display respected cards
-    => implemented Pagination, in Each page only 6 Item cards will display
-3. Created Add Resource Page
-     
-    
+# Project Overview
 
+## Overview
 
+This project implements a responsive and styled interface using Tailwind CSS, manages state with Redux, and handles API requests with Axios. It includes a login/logout system and various features for managing resources.
 
-    
+## Features
+
+### 1. Login Page
+
+- Created a login page with example credentials:
+  - Phone Number: `1234567890`
+  - Password: `password123`
+- User credentials are stored in `localStorage` upon successful login.
+- Error handling for incorrect credentials using React Toastify.
+- Navigation to the resource page is restricted until successful login.
+
+### 2. Resource Page
+
+- Implemented three tabs: Resource, Request, and User.
+- Pagination with 6 items per page in each tab.
+- Added navigation button to redirect to the add resources page.
+
+### 3. Add Resource Page
+
+- Created a form with fields:
+  - Item Title
+  - Link
+  - Icon URL
+  - Tag Name Dropdown
+  - Category
+  - Description
+- Used POST method to submit data to the API.
+- Success messages displayed using React Toastify upon successful submission.
+- Form validation implemented using Formik.
+
+## Additional Features
+
+- Clicking on the profile image in the navigation bar displays a logout option.
+- Logging out redirects the user to the login page.
+- Page access via URLs is restricted after logout.
+
+## Technologies Used
+
+- React
+- Tailwind CSS
+- Redux
+- Axios
+- React Toastify
+- Formik (for form validation)
+
+## Getting Started
+
+1. Clone the repository.
+2. Install dependencies: `npm install`.
+3. Start the development server: `npm start`.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
